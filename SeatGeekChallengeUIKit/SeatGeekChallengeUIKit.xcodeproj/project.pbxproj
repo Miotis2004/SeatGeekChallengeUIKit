@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDAEF91F264C166600712EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF91E264C166600712EA9 /* AppDelegate.swift */; };
+		FDAEF921264C166600712EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF920264C166600712EA9 /* SceneDelegate.swift */; };
+		FDAEF926264C166600712EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF924264C166600712EA9 /* Main.storyboard */; };
+		FDAEF928264C166700712EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF927264C166700712EA9 /* Assets.xcassets */; };
+		FDAEF92B264C166700712EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF929264C166700712EA9 /* LaunchScreen.storyboard */; };
+		FDAEF936264C166700712EA9 /* SeatGeekChallengeUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF935264C166700712EA9 /* SeatGeekChallengeUIKitTests.swift */; };
+		FDAEF941264C166700712EA9 /* SeatGeekChallengeUIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF940264C166700712EA9 /* SeatGeekChallengeUIKitUITests.swift */; };
+		FDAEF956264C178500712EA9 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF955264C178500712EA9 /* EventModel.swift */; };
+		FDAEF958264C17D200712EA9 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF957264C17D200712EA9 /* EventViewModel.swift */; };
+		FDAEF95A264C180A00712EA9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF959264C180A00712EA9 /* NetworkManager.swift */; };
+		FDAEF95C264C18CF00712EA9 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDAEF932264C166700712EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDAEF913264C166600712EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDAEF91A264C166600712EA9;
+			remoteInfo = SeatGeekChallengeUIKit;
+		};
+		FDAEF93D264C166700712EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDAEF913264C166600712EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDAEF91A264C166600712EA9;
+			remoteInfo = SeatGeekChallengeUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDAEF91B264C166600712EA9 /* SeatGeekChallengeUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeatGeekChallengeUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAEF91E264C166600712EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDAEF920264C166600712EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDAEF925264C166600712EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDAEF927264C166700712EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDAEF92A264C166700712EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDAEF92C264C166700712EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAEF931264C166700712EA9 /* SeatGeekChallengeUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekChallengeUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAEF935264C166700712EA9 /* SeatGeekChallengeUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekChallengeUIKitTests.swift; sourceTree = "<group>"; };
+		FDAEF937264C166700712EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAEF93C264C166700712EA9 /* SeatGeekChallengeUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatGeekChallengeUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAEF940264C166700712EA9 /* SeatGeekChallengeUIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatGeekChallengeUIKitUITests.swift; sourceTree = "<group>"; };
+		FDAEF942264C166700712EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAEF955264C178500712EA9 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		FDAEF957264C17D200712EA9 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		FDAEF959264C180A00712EA9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDAEF918264C166600712EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF92E264C166700712EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF939264C166700712EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDAEF912264C166600712EA9 = {
+			isa = PBXGroup;
+			children = (
+				FDAEF91D264C166600712EA9 /* SeatGeekChallengeUIKit */,
+				FDAEF934264C166700712EA9 /* SeatGeekChallengeUIKitTests */,
+				FDAEF93F264C166700712EA9 /* SeatGeekChallengeUIKitUITests */,
+				FDAEF91C264C166600712EA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDAEF91C264C166600712EA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF91B264C166600712EA9 /* SeatGeekChallengeUIKit.app */,
+				FDAEF931264C166700712EA9 /* SeatGeekChallengeUIKitTests.xctest */,
+				FDAEF93C264C166700712EA9 /* SeatGeekChallengeUIKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDAEF91D264C166600712EA9 /* SeatGeekChallengeUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF954264C16EE00712EA9 /* App */,
+				FDAEF953264C16D800712EA9 /* Views */,
+				FDAEF952264C16C900712EA9 /* ViewModels */,
+				FDAEF951264C16BB00712EA9 /* Models */,
+				FDAEF950264C16B000712EA9 /* Data */,
+				FDAEF94F264C169F00712EA9 /* Storyboards */,
+				FDAEF94E264C167700712EA9 /* Utilities */,
+			);
+			path = SeatGeekChallengeUIKit;
+			sourceTree = "<group>";
+		};
+		FDAEF934264C166700712EA9 /* SeatGeekChallengeUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF935264C166700712EA9 /* SeatGeekChallengeUIKitTests.swift */,
+				FDAEF937264C166700712EA9 /* Info.plist */,
+			);
+			path = SeatGeekChallengeUIKitTests;
+			sourceTree = "<group>";
+		};
+		FDAEF93F264C166700712EA9 /* SeatGeekChallengeUIKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF940264C166700712EA9 /* SeatGeekChallengeUIKitUITests.swift */,
+				FDAEF942264C166700712EA9 /* Info.plist */,
+			);
+			path = SeatGeekChallengeUIKitUITests;
+			sourceTree = "<group>";
+		};
+		FDAEF94E264C167700712EA9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF927264C166700712EA9 /* Assets.xcassets */,
+				FDAEF92C264C166700712EA9 /* Info.plist */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FDAEF94F264C169F00712EA9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF929264C166700712EA9 /* LaunchScreen.storyboard */,
+				FDAEF924264C166600712EA9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FDAEF950264C16B000712EA9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF959264C180A00712EA9 /* NetworkManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FDAEF951264C16BB00712EA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF955264C178500712EA9 /* EventModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDAEF952264C16C900712EA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF957264C17D200712EA9 /* EventViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FDAEF953264C16D800712EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDAEF954264C16EE00712EA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDAEF91E264C166600712EA9 /* AppDelegate.swift */,
+				FDAEF920264C166600712EA9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDAEF91A264C166600712EA9 /* SeatGeekChallengeUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAEF945264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKit" */;
+			buildPhases = (
+				FDAEF917264C166600712EA9 /* Sources */,
+				FDAEF918264C166600712EA9 /* Frameworks */,
+				FDAEF919264C166600712EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeatGeekChallengeUIKit;
+			productName = SeatGeekChallengeUIKit;
+			productReference = FDAEF91B264C166600712EA9 /* SeatGeekChallengeUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDAEF930264C166700712EA9 /* SeatGeekChallengeUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAEF948264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKitTests" */;
+			buildPhases = (
+				FDAEF92D264C166700712EA9 /* Sources */,
+				FDAEF92E264C166700712EA9 /* Frameworks */,
+				FDAEF92F264C166700712EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAEF933264C166700712EA9 /* PBXTargetDependency */,
+			);
+			name = SeatGeekChallengeUIKitTests;
+			productName = SeatGeekChallengeUIKitTests;
+			productReference = FDAEF931264C166700712EA9 /* SeatGeekChallengeUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDAEF93B264C166700712EA9 /* SeatGeekChallengeUIKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDAEF94B264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKitUITests" */;
+			buildPhases = (
+				FDAEF938264C166700712EA9 /* Sources */,
+				FDAEF939264C166700712EA9 /* Frameworks */,
+				FDAEF93A264C166700712EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAEF93E264C166700712EA9 /* PBXTargetDependency */,
+			);
+			name = SeatGeekChallengeUIKitUITests;
+			productName = SeatGeekChallengeUIKitUITests;
+			productReference = FDAEF93C264C166700712EA9 /* SeatGeekChallengeUIKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDAEF913264C166600712EA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FDAEF91A264C166600712EA9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FDAEF930264C166700712EA9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDAEF91A264C166600712EA9;
+					};
+					FDAEF93B264C166700712EA9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FDAEF91A264C166600712EA9;
+					};
+				};
+			};
+			buildConfigurationList = FDAEF916264C166600712EA9 /* Build configuration list for PBXProject "SeatGeekChallengeUIKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDAEF912264C166600712EA9;
+			productRefGroup = FDAEF91C264C166600712EA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDAEF91A264C166600712EA9 /* SeatGeekChallengeUIKit */,
+				FDAEF930264C166700712EA9 /* SeatGeekChallengeUIKitTests */,
+				FDAEF93B264C166700712EA9 /* SeatGeekChallengeUIKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDAEF919264C166600712EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAEF92B264C166700712EA9 /* LaunchScreen.storyboard in Resources */,
+				FDAEF928264C166700712EA9 /* Assets.xcassets in Resources */,
+				FDAEF926264C166600712EA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF92F264C166700712EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF93A264C166700712EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDAEF917264C166600712EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAEF95A264C180A00712EA9 /* NetworkManager.swift in Sources */,
+				FDAEF91F264C166600712EA9 /* AppDelegate.swift in Sources */,
+				FDAEF956264C178500712EA9 /* EventModel.swift in Sources */,
+				FDAEF958264C17D200712EA9 /* EventViewModel.swift in Sources */,
+				FDAEF921264C166600712EA9 /* SceneDelegate.swift in Sources */,
+				FDAEF95C264C18CF00712EA9 /* EventsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF92D264C166700712EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAEF936264C166700712EA9 /* SeatGeekChallengeUIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAEF938264C166700712EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDAEF941264C166700712EA9 /* SeatGeekChallengeUIKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDAEF933264C166700712EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDAEF91A264C166600712EA9 /* SeatGeekChallengeUIKit */;
+			targetProxy = FDAEF932264C166700712EA9 /* PBXContainerItemProxy */;
+		};
+		FDAEF93E264C166700712EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDAEF91A264C166600712EA9 /* SeatGeekChallengeUIKit */;
+			targetProxy = FDAEF93D264C166700712EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDAEF924264C166600712EA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDAEF925264C166600712EA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDAEF929264C166700712EA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDAEF92A264C166700712EA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDAEF943264C166700712EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDAEF944264C166700712EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDAEF946264C166700712EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKit/Utilities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDAEF947264C166700712EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKit/Utilities/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDAEF949264C166700712EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekChallengeUIKit.app/SeatGeekChallengeUIKit";
+			};
+			name = Debug;
+		};
+		FDAEF94A264C166700712EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeatGeekChallengeUIKit.app/SeatGeekChallengeUIKit";
+			};
+			name = Release;
+		};
+		FDAEF94C264C166700712EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekChallengeUIKit;
+			};
+			name = Debug;
+		};
+		FDAEF94D264C166700712EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 772G68LLWQ;
+				INFOPLIST_FILE = SeatGeekChallengeUIKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronniejoubert.SeatGeekChallengeUIKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SeatGeekChallengeUIKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDAEF916264C166600712EA9 /* Build configuration list for PBXProject "SeatGeekChallengeUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAEF943264C166700712EA9 /* Debug */,
+				FDAEF944264C166700712EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAEF945264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAEF946264C166700712EA9 /* Debug */,
+				FDAEF947264C166700712EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAEF948264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAEF949264C166700712EA9 /* Debug */,
+				FDAEF94A264C166700712EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDAEF94B264C166700712EA9 /* Build configuration list for PBXNativeTarget "SeatGeekChallengeUIKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDAEF94C264C166700712EA9 /* Debug */,
+				FDAEF94D264C166700712EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDAEF913264C166600712EA9 /* Project object */;
+}
