@@ -8,7 +8,7 @@
 import Foundation
 
 struct EventWrapper: Codable {
-    var resultCount: Int
+    //var resultCount: Int
     var results: [Event]
 }
 

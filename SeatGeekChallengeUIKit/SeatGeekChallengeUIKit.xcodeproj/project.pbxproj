@@ -18,6 +18,9 @@
 		FDAEF958264C17D200712EA9 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF957264C17D200712EA9 /* EventViewModel.swift */; };
 		FDAEF95A264C180A00712EA9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF959264C180A00712EA9 /* NetworkManager.swift */; };
 		FDAEF95C264C18CF00712EA9 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */; };
+		FDAEF95F264C198700712EA9 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF95D264C198700712EA9 /* EventTableViewCell.swift */; };
+		FDAEF960264C198700712EA9 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF95E264C198700712EA9 /* EventTableViewCell.xib */; };
+		FDAEF962264C20CA00712EA9 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF961264C20CA00712EA9 /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		FDAEF957264C17D200712EA9 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		FDAEF959264C180A00712EA9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		FDAEF95D264C198700712EA9 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		FDAEF95E264C198700712EA9 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		FDAEF961264C20CA00712EA9 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 			children = (
 				FDAEF927264C166700712EA9 /* Assets.xcassets */,
 				FDAEF92C264C166700712EA9 /* Info.plist */,
+				FDAEF961264C20CA00712EA9 /* UIViewControllerExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				FDAEF95B264C18CF00712EA9 /* EventsViewController.swift */,
+				FDAEF95D264C198700712EA9 /* EventTableViewCell.swift */,
+				FDAEF95E264C198700712EA9 /* EventTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAEF960264C198700712EA9 /* EventTableViewCell.xib in Resources */,
 				FDAEF92B264C166700712EA9 /* LaunchScreen.storyboard in Resources */,
 				FDAEF928264C166700712EA9 /* Assets.xcassets in Resources */,
 				FDAEF926264C166600712EA9 /* Main.storyboard in Resources */,
@@ -323,10 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAEF962264C20CA00712EA9 /* UIViewControllerExtensions.swift in Sources */,
 				FDAEF95A264C180A00712EA9 /* NetworkManager.swift in Sources */,
 				FDAEF91F264C166600712EA9 /* AppDelegate.swift in Sources */,
 				FDAEF956264C178500712EA9 /* EventModel.swift in Sources */,
 				FDAEF958264C17D200712EA9 /* EventViewModel.swift in Sources */,
+				FDAEF95F264C198700712EA9 /* EventTableViewCell.swift in Sources */,
 				FDAEF921264C166600712EA9 /* SceneDelegate.swift in Sources */,
 				FDAEF95C264C18CF00712EA9 /* EventsViewController.swift in Sources */,
 			);
