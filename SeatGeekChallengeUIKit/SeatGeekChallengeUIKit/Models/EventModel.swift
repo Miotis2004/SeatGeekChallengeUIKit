@@ -8,7 +8,7 @@
 import Foundation
 
 struct EventWrapper: Codable {
-    var resultCount: Int
+    //var resultCount: Int
     var results: [Event]
 }
 
@@ -19,7 +19,7 @@ struct Event: Codable {
 
 struct EventDetail: Codable {
     var venue: Venue
-    var performer: Performer
+    var performers: Performer
 }
 
 struct Venue: Codable {

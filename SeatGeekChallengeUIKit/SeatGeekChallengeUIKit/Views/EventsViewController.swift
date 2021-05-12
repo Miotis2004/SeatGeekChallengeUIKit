@@ -7,12 +7,13 @@
 
 import UIKit
 
-class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     
@@ -25,6 +26,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cellNib = UINib(nibName: "EventTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "EventCell")
         
+        searchBar.delegate = self
+        
         self.vm.callNetwork(name: nameData ?? "swift")
         
         self.vm.bind { [weak self] in
@@ -36,6 +39,10 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print("No events")
             self.presentSimpleAlert(title: "Error", message: "No records found", buttonTitle: "OK")
         }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.vm.callNetwork(name: searchText)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

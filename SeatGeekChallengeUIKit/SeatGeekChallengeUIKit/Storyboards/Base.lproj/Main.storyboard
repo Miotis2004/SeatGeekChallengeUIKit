@@ -31,6 +31,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="gtg-Au-298" id="GMd-s0-57T"/>
                         <outlet property="tableView" destination="3SK-tx-CLB" id="VOf-Sk-lgU"/>
                     </connections>
                 </viewController>

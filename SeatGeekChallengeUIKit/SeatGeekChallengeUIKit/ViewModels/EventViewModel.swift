@@ -50,7 +50,7 @@ extension EventViewModel {
     
     func artistName(index: Int) -> String {
         guard self.count() > index else { return ""}
-        return self.eventArray?[index].events.performer.name ?? "Artist name not found"
+        return self.eventArray?[index].events.performers.name ?? "Artist name not found"
     }
     
     func displayLocation(index: Int) -> String {
