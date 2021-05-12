@@ -34,22 +34,38 @@ extension NetworkManager: Network {
             completion(.failure(CustomError.urlFailure))
             return
         }
-        
+
         self.session.dataTask(with: url) { (data, response, error) in
             guard let data = data else {
                 completion(.failure(CustomError.dataFailure))
                 return
             }
-            
+
+            print(data)
+
             do{
                 let wrapper = try JSONDecoder().decode(EventWrapper.self, from: data)
-                completion(.success(wrapper.results))
+                completion(.success(wrapper.events))
             } catch {
-                print(error)
+                print("Error decoding JSON")
                 completion(.failure(CustomError.decodeFailure))
             }
         }.resume()
     }
     
-    
+//    func loadEventList(name: String, completion: @escaping (Result<[Event], Error>) -> Void) {
+//        if let path = Bundle.main.path(forResource: "data", ofType: "json") {
+//            do {
+//                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//
+//                let wrapper = try JSONDecoder().decode(EventWrapper.self, from: data)
+//
+//                completion(.success(wrapper.events))
+//            } catch {
+//                print(error)
+//                print("Error decoding json \(error.localizedDescription)")
+//                completion(.failure(CustomError.decodeFailure))
+//            }
+//        }
+//    }
 }

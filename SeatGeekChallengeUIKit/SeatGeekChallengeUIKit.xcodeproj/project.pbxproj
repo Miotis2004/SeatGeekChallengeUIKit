@@ -21,6 +21,7 @@
 		FDAEF95F264C198700712EA9 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF95D264C198700712EA9 /* EventTableViewCell.swift */; };
 		FDAEF960264C198700712EA9 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF95E264C198700712EA9 /* EventTableViewCell.xib */; };
 		FDAEF962264C20CA00712EA9 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEF961264C20CA00712EA9 /* UIViewControllerExtensions.swift */; };
+		FDAEF964264C432F00712EA9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FDAEF963264C432F00712EA9 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FDAEF95D264C198700712EA9 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		FDAEF95E264C198700712EA9 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		FDAEF961264C20CA00712EA9 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		FDAEF963264C432F00712EA9 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				FDAEF959264C180A00712EA9 /* NetworkManager.swift */,
+				FDAEF963264C432F00712EA9 /* data.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				FDAEF960264C198700712EA9 /* EventTableViewCell.xib in Resources */,
 				FDAEF92B264C166700712EA9 /* LaunchScreen.storyboard in Resources */,
 				FDAEF928264C166700712EA9 /* Assets.xcassets in Resources */,
+				FDAEF964264C432F00712EA9 /* data.json in Resources */,
 				FDAEF926264C166600712EA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

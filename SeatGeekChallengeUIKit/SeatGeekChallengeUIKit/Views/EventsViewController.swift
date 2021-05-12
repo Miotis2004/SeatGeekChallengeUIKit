@@ -27,8 +27,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.register(cellNib, forCellReuseIdentifier: "EventCell")
         
         searchBar.delegate = self
-        
-        self.vm.callNetwork(name: nameData ?? "swift")
+        tableView.dataSource = self
+        tableView.delegate = self
         
         self.vm.bind { [weak self] in
             print("Callback achieved")
@@ -39,6 +39,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print("No events")
             self.presentSimpleAlert(title: "Error", message: "No records found", buttonTitle: "OK")
         }
+        
+        self.vm.callNetwork(name: nameData ?? "swift")
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -46,6 +48,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Count: \(self.vm.count())")
         return self.vm.count()
     }
     
